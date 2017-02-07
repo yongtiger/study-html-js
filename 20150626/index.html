@@ -1,0 +1,241 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>jquery scroll鼠标控制页面全屏图片滚动代码_phplearn初学者</title>
+
+<link href="./css/css.css" rel="stylesheet" type="text/css">
+<link href="./css/common.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./css/style38.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<link rel="stylesheet" href="./css/css3.css" />
+
+<style>
+
+	</style>
+</head>
+<body>
+
+<div class="fixed_r">
+	<ul>
+		<li class="on"></li>
+		<li class=""></li>
+		<li class=""></li>
+		<li class=""></li><!-- 
+		<li class="">5</li>
+		<li class="">6</li> -->
+	</ul>
+</div>
+<div class="num_box" style="bottom: 0px;">
+	<!-- 0 -->
+	<div id="header">
+        <a href="#" id="logo">
+            <img src="./image/common/1.png"/>
+        </a>
+        <!-- <img src="image/common/2.png" class="logon"/> -->
+        <ul class="nav">
+            <li><a href="index.html">SSJ</a></li>
+            <li><a href="about.html">SSX</a></li>
+            <li><a href="#">SSY</a></li>
+            <li><a href="index.html">论坛</a></li>
+            <li><a href="about.html">关于我们</a></li>
+        </ul>
+    </div>
+	<div class="num" id="num_0">
+		<div id="imageShow">
+            <div id="imgshow_mask"></div>
+            <ul class="imagebg" id="imagebg">
+                <li data-sPic="./image/huan/index_ya_s.jpg">
+                    <a href="#" class="bannerbg_main" style="background:url(./image/huan/index_ya.png) 50% 50% no-repeat;" ></a>
+                </li>
+                <li data-sPic="./image/huan/index_uc9_s.jpg">
+                    <a href="#" class="bannerbg_main" style="background:url(./image/huan/index_uc9.png) 50% 50% no-repeat;" ></a>
+                </li>
+                <li data-sPic="./image/huan/index_newlogo_s.jpg">
+                    <a href="#" class="bannerbg_main" style="background:url(./image/huan/index_newlogo.png) 50% 50% no-repeat;" ></a>
+                </li>
+            </ul>
+            
+            <div class="scrollbg">
+                <div class="scroll">
+                    <a id="left_img_btn" class="s_pre" href="javascript:void(0)"></a>
+                    <div class="current" id="current"></div>
+                    <div class="outScroll_pic">
+                        <ul class="scroll_pic cls" id="small_pic"></ul>
+                    </div>
+                    <a id="right_img_btn" class="s_next" href="javascript:void(0)"></a>
+                </div>
+            </div>
+        </div>
+	</div>
+	<!-- 0 end -->
+	<!-- 1 -->
+	<div class="num" id="num_1" style="height: 857px;">
+		<img class="fgh" src="./image/1-background.jpg">
+		<div id="asd">
+            <div class="zhong1">
+                    <img src="./image/1-up to down.png" height="680" width="710" />
+            </div>
+            <div class="shang1">
+					<img src="./image/1-left top.png" height="480" width="490"/>
+			</div>
+			<div class="xia1">
+			   <img src="./image/1-left bottom.png" height="415" width="510">
+			</div>
+			<div class="pic1">
+            	<img src="./image/1-top left corner.png">
+    		</div>
+    		<div class="upa1">
+				<img src="./image/1-right top.png">
+			</div>
+			<div class="centrea1">
+		        <img src="./image/1-right middle.png" height="69" width="366">
+		    </div>
+		    <div class="belowa1">
+		        <img src="./image/1-low right.png" height="189" width="142">
+		    </div>
+		</div>
+	</div>
+	<!-- 1 end -->
+	<!-- 2 -->
+
+	<div class="num" id="num_2" style="height: 857px;">
+	<div id="bg">
+        <img src="./image/2-background0.jpg" width="1900" height="960">
+    </div>
+<div id="quan">
+    <div id="left">
+        <div class="ee">
+            <img src="./image/2-upper left.png" height="160" width="120">
+        </div>
+        <div class="f1">
+            <img src="./image/2-left.png" height="430" width="240">
+        </div>
+        <div class="g1">
+            <img src="./image/2-left lower.png" height="110" width="180">
+        </div>
+    </div>
+
+	<div id="ridus">
+	    <div id="e-circle">
+	        <div class="e11"></div>
+	        <div class="e22"></div>
+	        <div class="e33"></div>
+	    </div>
+	    <div class="ac">
+	        <img src="./image/1.png" height="447" width="756">
+	    </div>
+        <div class="bc">
+            <img src="./image/2-top.png" height="148" width="338">
+        </div>
+        <div class="cc">
+        	<img src="./image/2-kaminaka.png" height="58" width="74">
+        </div>
+        <div class="dc">
+        	<img src="./image/2-below average.png" height="120" width="464">
+    	</div>
+    </div> 
+
+    <div id="right">
+        <div class="hh">
+        <img src="./image/2-right.png" height="482" width="486">
+    </div>
+    </div>
+</div>
+</div>
+ <div id="footer">
+                <div class="footer-top">
+                    <dl>
+                        <dt>每位互联</dt>
+                        <dd><a href="#"><img src="image/common/3.png"></a></dd>
+                        <dd><a href="#"><img src="image/common/4.png"></a></dd>
+                    </dl>
+                </div>
+
+                <div class="footer-main">
+                    <dl class="friends">
+                        <dt>友情链接</dt>
+                        <dd><a href="#">凤凰网</a></dd>
+                        <dd><a href="#">腾讯</a></dd>
+                        <dd><a href="#">阿里</a></dd>
+                        <dd><a href="#">网易</a></dd>
+                        
+                        <dd><a href="#"> 新浪</a></dd>
+                        <dd><a href="#">阿里巴巴</a></dd>
+                        
+                    </dl>
+
+                    <dl class="content">
+                        <dt>联系我们</dt>
+                        <dd><a href="#">客服邮箱1039049277@qq.cnm</a></dd>
+                        <dd><a href="#">商务合作296341060@qq.cnm</a></dd>
+                        <dd><a href="#">论坛反馈1773456306@qq.cnm</a></dd>
+                    </dl>
+
+                    <dl class="focus">
+                        <dt>关注每位</dt>
+                        <dd>
+                            <a href="">
+                                <img src="image/common/5.png" style="width:80px;height:80px;" />
+                                <span>
+                                    随时记微博
+                                </span>
+                            </a>
+                        </dd>
+                        <dd>
+                            <!-- <a href="">
+                                <img src="image/common/6.jpg" style="width:80px;height:80px;"/>
+                                <span>随时记微信</span>
+                            </a> -->
+                        </dd>
+                    </dl>
+
+                    <dl class="content">
+                        <dt>互动讨论</dt>
+                        <dd><a href="#">安卓版交流群1：1039049277</a></dd>
+                        <dd><a href="#">安卓版交流群2：278029268</a></dd>
+                        <dd><a href="#">ios越狱版交流群：278029268</a></dd>
+                        <dd><a href="#">非越狱版交流群：278029268</a></dd>
+                        <dd><a href="#">WP版交流群 ：1773456306</a></dd>
+                    </dl>
+                </div>
+
+                <div class="copyright">
+                    Copyright © 2013-2015 meiweipub.com All Rights Reversed. 京ICP备11018032号-8 京公网安备11010802013056
+                </div>
+            </div>
+	<!-- 2 end -->
+	<!-- <div class="num" id="num_0" style="height: 857px;"><p style="top: 50%;">第1屏</p></div> -->
+	<!-- <div class="num" id="num_1" style="height: 857px;"><p style="top: 0px;">第2屏</p></div>
+	<div class="num" id="num_2" style="height: 857px;"><p style="top: 0px;">第3屏</p></div> -->
+	<!-- <div class="num" id="num_3" style="height: 857px;"><p style="top: 0px;">第4屏</p></div> -->
+	<div class="num" id="num_4" style="height: 857px;"><p style="top: 0px;"></p></div>
+	<!-- <div class="num" id="num_5" style="height: 857px;"><p style="top: 0px;">第6屏</p></div> -->
+</div>
+<input type="hidden" value="0" class="ddw">
+<input type="hidden" value="0" class="ddw2">
+
+<script type="text/javascript" src="./js/scroll.js"></script> 
+<script type="text/javascript" src="./js/jquery.mousewheel.js"></script>
+
+
+
+	</body>
+	<script type="text/javascript" src="./js/imgSlider.js"></script>
+    <script type="text/javascript">
+        img.init();
+        img.play(0);
+        //阻止事件冒泡
+        function estop(e){
+            var e=arguments.callee.caller.arguments[0]||event;
+            if (e && e.stopPropagation){
+            //因此它支持W3C的stopPropagation()方法
+               e.stopPropagation();
+            }else{
+            //否则，我们需要使用IE的方式来取消事件冒泡
+               window.event.cancelBubble = true;
+               return false;
+            }
+        }
+        </script>
+
+</html>

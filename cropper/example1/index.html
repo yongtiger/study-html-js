@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>https://github.com/fengyuanchen/cropper/</title>
+    <link rel="stylesheet" type="text/css" href="./cropper/dist/cropper.css" />
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./cropper/dist/cropper.js"></script>
+    <script type="text/javascript">
+        jQuery(function() {
+            $('#image').cropper({
+              aspectRatio: 16 / 9,
+              crop: function(e) {
+                // Output the result data for cropping image.
+                console.log(e.x);
+                console.log(e.y);
+                console.log(e.width);
+                console.log(e.height);
+                console.log(e.rotate);
+                console.log(e.scaleX);
+                console.log(e.scaleY);
+              }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Wrap the image or canvas element with a block element (container) -->
+        <div>
+          <img id="image" src="aaa.png">
+        </div>
+
+    </div>
+</body>
+</html>

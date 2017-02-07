@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>WebUploader演示 - 带裁剪功能 (百度webuploader 结合fengyuanchen/cropper版本v.3.0.0)</title>
+    <link rel="stylesheet" type="text/css" href="./webuploader/dist/webuploader.css" />
+    <link rel="stylesheet" type="text/css" href="./cropper/dist/cropper.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <style>
+        <!--///[fengyuanchen/cropper(v.3.0.0)]-->
+        /* Limit image width to avoid overflow the container */
+        img {
+          max-width: 100%; /* This rule is very important, please do not ignore this! */
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="uploader-container">
+            <div id="filePicker">选择文件</div>
+        </div>
+
+        <!-- Croper container -->
+        <div class="cropper-wraper webuploader-element-invisible">
+            <div class="img-container">
+                <img src="" alt="" />
+            </div>
+
+            <div class="upload-btn">上传所选区域</div>
+            <!--//////[fengyuanchen/cropper(v.3.0.0)]Add class `cropper-view-box`-->
+            <div class="cropper-view-box img-preview" ></div>
+        </div>
+
+
+    </div>
+    <script type="text/javascript" src="./jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="./webuploader/dist/webuploader.js"></script>
+    <script type="text/javascript" src="./cropper/dist/cropper.js"></script>
+    <script type="text/javascript" src="./uploader.js"></script>
+</body>
+</html>

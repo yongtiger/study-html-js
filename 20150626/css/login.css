@@ -1,0 +1,321 @@
+﻿/*整体页面的风格*/
+body{
+	background:url(../image/quc_index_bg.jpg) no-repeat 50% 50%;
+	color: #666;
+	font:12px/1.5 Tahoma,Arial,"宋体",Helvetica,sans-serif;
+}
+
+/**/
+a{
+	color: #808080;
+	text-decoration: none;//去掉a标签的下划线
+}
+
+a:hover{
+	color: #20b2aa;
+}
+
+
+
+
+/*logo的样式*/
+#hd, #hd .logo {
+	float: left;
+	height: 61px;
+}
+#hd .logo {
+	background: url(../image/logo.png) no-repeat;
+	margin-left: 13px;
+	width: 228px;
+}
+#hd {
+	background: transparent;
+	margin-bottom: 23px;
+	width: 270px;
+}
+
+
+
+
+/*每位互联的样式*/
+.info{
+
+	float: right;
+}
+
+.info span a {
+	font-size: 16px;
+}
+.registerNew {
+background: url(../image/registerNew.png) no-repeat 86px 1px;
+display: inline-block;
+padding-right: 30px;
+width: 90px;
+}
+
+
+/*位置居中设置*/
+#doc{
+	font: 14px "Microsoft YaHei";
+	margin: 0 auto;
+	position: relative;
+	width: 644px;
+}
+
+/*整体框的左边距*/
+#loginWrap {
+margin-left: 60px;
+}
+
+
+/*整体中间内容的样式*/
+#quc-bd .content{
+	height: 369px;
+	padding: 10px 59px 25px 0;
+	position: relative;
+	width: 523px;
+}
+
+/*中间的背景图样式*/
+#doc .reg-wrapper11 {
+	background: url(../image/bdbg11.png) repeat-x;
+	height: 454px;
+	padding-top: 14px;
+}
+
+/*清除左右两边的浮动*/
+.quc-clearfix, .quc-clearfix:after {
+	clear: both;
+}
+
+
+
+/*二维码样式*/
+.uc-logincode {
+	position: absolute;
+	right: -63px;
+	top: -5px;
+}
+.uc-logincode .btn-code {
+	background: url(../image/two-code.png?) no-repeat;
+	display: inline-block;
+	height: 71px;
+	width: 71px;
+}
+
+/*中间第二层最上边边框样式*/
+.quc-mod-sign-in .quc-tip-wrapper {
+margin: -10px 0 5px -30px;
+}
+.quc-mod-sign-in .quc-tip-wrapper {
+height: 21px;
+line-height: 21px;
+padding: 13px 0 0 105px;
+}
+
+
+
+/*字体样式*/
+.quc-wrapper {
+	font: normal 12px/1em 'Helvetica Neue',Helvetica,Arial,SimSun,'宋体',Sans-Serif;
+}
+
+/*中间第二层内框样式*/
+.quc-qiuser-panel .quc-main {
+margin-left: 35px;
+}
+.quc-mod-sign-in .quc-main {
+min-height: 190px;
+padding: 0 0 10px 30px;
+width: 380px;
+}
+
+
+
+/*中间第三层框样式*/
+.quc-sign-up-wrapper .quc-tip-wrapper {
+	padding: 3px 0 5px;
+}
+
+.quc-mod-sign-up .quc-tip-wrapper {
+	height: 21px;
+	line-height: 21px;
+	padding: 3px 0 0 75px;
+}
+
+
+/*手机号、校验码、密码、确认密码的整体样式*/
+.quc-wrapper .quc-ipbox {
+	background: #fff;
+	border: 1px solid #ced1d0;
+	border-radius: 4px;
+	font: 16px "Microsoft YaHei";
+	margin-bottom: 10px;
+}
+
+
+
+/*每项标题样式*/
+.quc-mod-sign-in .quc-ipbox .quc-label {
+	color: #999;
+	font-size: 16px;
+	line-height: 50px;
+	margin-right: 0;
+	padding: 0 5px;
+	width: 65px;
+}
+.quc-mod-sign-in .quc-label {
+	color: #333;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 31px;
+	margin-right: 10px;
+	text-align: right;
+	width: 60px;
+}
+
+
+
+
+/*填空样式*/
+.quc-wrapper .quc-input-bg {
+	display: inline-block;
+	height: 42px;
+	vertical-align: middle;
+	width: 270px;
+}
+
+
+/*两个文本框中间的线*/
+.quc-qiuser-panel .quc-wrapper .quc-checkbox {
+	vertical-align: -1px;
+}
+.quc-wrapper .quc-checkbox, .quc-wrapper .quc-radio {
+	margin-right: 5px;
+}
+.quc-qiuser-panel .quc-mod-sign-in .quc-field-submit {
+	padding-top: 10px;
+}
+.botborder {
+	border-bottom: 1px solid #e5e5e5;
+}
+.quc-wrapper .quc-input {
+	background: none;
+	border: none;
+	color: gray;
+	height: 21px;
+	outline: none;
+	padding: 6px 7px;
+	width: 247px;
+}
+.quc-wrapper .quc-ipbox .quc-input {
+	font: 14px/25px arial;
+	margin: 3px 0;
+}
+
+
+
+/*忘记密码样式*/
+.quc-wrapper a.quc-findPwd {
+color: #9A4;
+float: right;
+}
+
+
+
+/*按钮的样式*/
+.quc-wrapper .quc-button {
+display: inline-block;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+vertical-align: middle;
+}
+.quc-wrapper .quc-button {
+background: url(../image/imeiwei_loginbutton.jpg) no-repeat;
+border: 0;
+cursor: pointer;
+height: 51px;
+outline: medium none;
+width: 372px;
+border-radius: 5px;
+}
+.quc-wrapper .quc-button-sign-in, .quc-wrapper .quc-button-sign-in:active {
+background-position: -535px -205px;
+}
+.quc-wrapper .quc-button-sign-in:hover, .quc-wrapper .quc-button-sign-in:focus, .quc-wrapper .quc-button-sign-in:active {
+background-position: -515px -358px;
+}
+
+
+
+
+/*其他账号登陆的样式*/
+.quc-qiuser-panel .quc-mod-sign-in .quc-field-third-part {
+color: #444;
+font-size: 14px;
+margin-top: 35px;
+}
+
+.quc-mod-sign-in .quc-third-part {
+margin-left: 5px;
+}
+
+.quc-mod-sign-in .quc-third-part-icon {
+background: url(../image/sp.png?) no-repeat;
+display: inline-block;
+height: 26px;
+margin: -3px 0 0 -1px;
+vertical-align: middle;
+width: 31px;
+}
+
+.quc-mod-sign-in .quc-third-part-icon-sina {
+background-position: -400px -280px;
+}
+
+
+.quc-mod-sign-in .quc-third-part-icon-renren {
+background-position: -400px -305px;
+}
+
+
+.quc-mod-sign-in .quc-third-part-icon-fetion {
+background-position: -400px -330px;
+}
+
+
+.quc-mod-sign-in .quc-third-part-icon-telecom {
+background-position: -400px -380px;
+}
+
+
+
+
+/*返回登录的样式*/
+#quc-bd .otherMessage {
+border-top: 1px #E5E5E5 solid;
+display: none;
+font-size: 14px;
+height: 60px;
+line-height: 53px;
+text-align: center;
+width: 110%;
+}
+
+
+
+
+
+
+
+/*脚部样式*/
+#ft, #ft a {
+	color: #241C17;
+}
+#ft {
+	margin: 35px 0 10px;
+	text-align: center;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gbk">
+    <title>抖动左右轮播特效</title>
+    <script type="text/javascript"src="doudong/jquery-1.js"></script>
+    <script type="text/javascript"src="doudong/jquery.js"></script>
+</head>
+
+<body>
+<style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    ul, li {
+        list-style: none;
+    }
+
+    img {
+        border: none;
+    }
+
+    .banner {
+        width: 900px;
+        margin: 20px auto;
+        cursor: pointer;
+        position: relative;
+        margin-bottom: 15px;
+    }
+
+    .banner,.banner ul {
+        display: block;
+        height: 300px;
+        overflow: hidden;
+    }
+    .banner li,.banner li,.banner li img {
+        display: block;
+        width: 900px;
+        height: 300px;
+        float: left;
+        overflow: hidden;
+    }
+    .banner #prevbt,.banner #nextbt {
+        display: block;
+        width: 30px;
+        height: 50px;
+        background: url(doudong/indexsprites.png) no-repeat #fff;
+        position: absolute;
+        top: 120px;
+        opacity: .5 ;
+        filter: alpha(opacity=100);
+    }
+    .banner #prevbt {
+        background-position: 0 -110px;
+        left: 0;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .banner #nextbt {
+        background-position: -40px -110px;
+        right: 0;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+</style>
+<div class="banner" id="banner">
+    <a id="prevbt"></a>
+    <a id="nextbt"></a>
+    <ul>
+        <li>
+            <img src="doudong/11.jpg">
+        </li>
+        <li>
+            <img src="doudong/22.jpg">
+        </li>
+        <li>
+            <img src="doudong/44.png">
+        </li>
+        <li>
+            <img src="doudong/33.jpg">
+        </li>
+    </ul>
+</div>
+
+<script>
+    ///【设置幻灯片宽度】
+    var li_Width = 900;
+
+    var banner_Li_Num = $('#banner li').length;
+    $('#banner ul').css({'width': li_Width * banner_Li_Num, 'marginLeft': -li_Width});
+
+    function prevbt() {
+        ///【unbind删除一个或多个事件】
+        $('#prevbt').unbind('click');
+        ///【detach移除被选元素】///【insertBefore在被选元素之前插入 HTML 标记或已有的元素】
+        $('#banner li:last').detach().insertBefore('#banner li:first').parents('ul').css('marginLeft', -li_Width * 2).
+            ///【animate动画效果 使用+=或-=】///【easeInOutBack动画缓冲效果】
+            stop(true).animate({marginLeft: -li_Width}, 800, 'easeInOutBack', function () {
+            $('#prevbt').bind('click', prevbt);
+        });
+    }
+    function nextbt() {
+        $('#nextbt').unbind();
+        $('#banner ul').stop(true).animate({marginLeft: -li_Width * 2}, 800, 'easeInOutBack', function () {
+            $('#banner ul').css('marginLeft', -li_Width).find('li:first').insertAfter('#banner li:last');
+            $('#nextbt').bind('click', nextbt);
+        })
+    }
+
+    $('#prevbt').click(function () {
+        prevbt();
+    })
+    $('#nextbt').click(function () {
+        nextbt();
+    })
+    ///【自动轮播】
+    ///【setinterval方法则是表示间隔一定时间反复执行某操作】
+    banner_T = setInterval(banner_Auto, 3000)
+    function banner_Auto() {
+        nextbt();
+    }
+    ///【hover(over,out)悬停事件】
+    $('#banner').hover(function () {
+        clearInterval(banner_T);
+    }, function () {
+        banner_T = setInterval(banner_Auto, 3000);
+    })
+</script>
+</body>
+</html>

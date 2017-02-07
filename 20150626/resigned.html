@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/resigned.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>
+        注册-每位互联
+    </title>
+</head>
+<body style="height: 868px;">
+    <div id="doc">
+        <!--通用头部-->
+        <div id="hd" class="clearfix" style="padding-top: 96px;">
+            <div class="logo">
+                <a href="#" hidefocus="true">
+                </a>
+            </div>
+        </div>
+        <!--内容部分-->
+        <div class="info" style="margin-top: 132px;">
+            <span>
+                <a target="_blank" href="portal.html">
+                    每位互联首页
+                </a>
+            </span>
+            <span class="split">
+                |
+            </span>
+            <span>
+                <a href="./login.html"
+                class="reg2login">
+                    已有每位互联帐号
+                </a>
+            </span>
+        </div>
+        <div id="quc-bd" class="quc-clearfix reg-wrapper2">
+            <div class="content">
+                <div id="regWrap">
+                    <div class="quc-sign-up-wrapper quc-wrapper quc-page">
+                        <div class="quc-mod-sign-up quc-clearfix">
+                            <div class="quc-left-bar" style="display: none;">
+                                <ul class="quc-sign-up-type">
+                                    <li class="quc-type-mobile quc-current">
+                                        <a href="#">
+                                            <i class="quc-icon quc-icon-mobile">
+                                            </i>
+                                            手机注册
+                                        </a>
+                                    </li>
+                                    <li class="quc-type-email">
+                                        <a href="#">
+                                            <i class="quc-icon quc-icon-email">
+                                            </i>
+                                            邮箱注册
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="quc-main">
+                                <div class="quc-tip-wrapper quc-global-error">
+                                    <p class="quc-tip quc-tip-error">
+                                    </p>
+                                </div>
+                                <form class="quc-form" method="post" action="http://i.360.cn/signUp/dosignUpAccount">
+                                    <div>
+                                        <div class="quc-field quc-field-mobile quc-input-middle quc-clearfix"style="margin-bottom:10px;border-bottom: none;">
+                                            <span class="quc-ipbox" style="display: block">
+                                                <label class="quc-label" for="quc_account_120021360">
+                                                    手机号
+                                                </label>
+                                                <span class="quc-input-bg">
+                                                    <input class="quc-input quc-input-mobile" type="tel" name="account" data-name="mobile" maxlength="11" id="quc_account_120021360">
+                                                </span><!-- 
+                                                <span class="tipwrapper-phoneReg msgtipsleft" style="top:55px;left:518px;">
+                                                    <i class="ico ico-err-3">
+                                                    </i>
+                                                    <span class="border-right msgtipsright">
+                                                        <span id="tips-phoneReg" class="text-tips tips-phoneReg reg-tips-wrong">
+                                                            <span class="quc-tip" data-default-tip="请输入您的手机号码 ">
+                                                                请输入您的手机号码
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </span> -->
+                                            </span>
+                                            <a href="#" class="quc-button quc-button-blue quc-get-sms-token">
+                                                免费获取校验码
+                                            </a>
+                                            <a class="quc-mobile-tip quc-link" href="#" target="_blank" tabindex="99">
+                                                校验码常见问题
+                                            </a>
+                                        </div>
+                                        <div class="quc-ipbox">
+                                            <div class="quc-field quc-field-sms-token quc-input-long">
+                                                <label class="quc-label" for="quc_smscode_120021361">
+                                                    校验码
+                                                </label>
+                                                <span class="quc-input-bg">
+                                                    <input class="quc-input quc-input-sms-token" type="text" name="smscode" data-name="smsToken" maxlength="6" id="quc_smscode_120021361">
+                                                </span>
+                                                <!-- <span class="tipwrapper-phoneReg errortipsleft">
+                                                    <i class="ico ico-right">
+                                                    </i>
+                                                    <span class="border-right errortipsright">
+                                                        <span id="tips-phoneReg" class="text-tips tips-phoneReg reg-tips-wrong">
+                                                            <span class="quc-tip" data-default-tip="请输入短信中6位数字校验码">
+                                                                请输入短信中6位数字校验码
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </span> -->
+                                            </div>
+                                            <div class="quc-field quc-field-password quc-input-long">
+                                                <label class="quc-label" for="quc_password_120021362">
+                                                    密码
+                                                </label>
+                                                <span class="quc-input-bg">
+                                                    <input class="quc-input quc-input-password" type="password" name="password" maxlength="20" id="quc_password_120021362">
+                                                </span>
+                                                <!-- <span class="tipwrapper-phoneReg errortipsleft">
+                                                    <i class="ico ico-err-3">
+                                                    </i>
+                                                    <span class="border-right errortipsright">
+                                                        <span id="tips-phoneReg" class="text-tips tips-phoneReg reg-tips-wrong">
+                                                            <span class="quc-tip" data-default-tip="6-20个字符(区分大小写)">
+                                                                6-20个字符(区分大小写)
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </span> -->
+                                            </div>
+                                            <div class="quc-field quc-field-password-again quc-input-long">
+                                                <label class="quc-label" for="quc_passwordAgain_120021363">
+                                                    确认密码
+                                                </label>
+                                                <span class="quc-input-bg">
+                                                    <input class="quc-input quc-input-password-again" type="password" name="passwordAgain" maxlength="20" id="quc_passwordAgain_120021363">
+                                                </span>
+                                                <!-- <span class="tipwrapper-phoneReg errortipsleft">
+                                                    <i class="ico ico-right">
+                                                    </i>
+                                                    <span class="border-right errortipsright">
+                                                        <span id="tips-phoneReg" class="text-tips tips-phoneReg reg-tips-wrong">
+                                                            <span class="quc-tip" data-default-tip="请再次输入密码">
+                                                                请再次输入密码
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="quc-field-submit">
+                                        <input class="quc-button quc-button-sign-up" type="submit" value=" ">
+                                    </p>
+                                    <p class="quc-field-licence">
+                                        <label>
+                                            <input class="quc-checkbox" type="checkbox" name="is_agree" data-name="agreeLicence"
+                                            checked="checked">
+                                            <span style="font-size:12px;">
+                                                我已经阅读并同意
+                                                <a class="quc-link green" href="#" target="_blank">
+                                                    《每位互联用户服务条款》
+                                                </a>
+                                            </span>
+                                        </label>
+                                    </p>
+                                    <p class="quc-login" style="display: none;">
+                                        已有帐号，
+                                        <a href="#" class="quc-link quc-link-login">
+                                            立即登录
+                                        </a>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 脚步 -->
+        <div id="ft">
+            Copyright © 2013-2015 meiweipub.com All Rights Reversed. 京ICP备11018032号-8 京公网安备11010802013056
+        </div>
+    </div>
+</body>
+
+</html>

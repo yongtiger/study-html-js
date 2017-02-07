@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>串珠分离</title>
+    <script type="text/javascript" src="czfenli/jquery.js"></script>
+    <script type="text/javascript">
+    var VIVO_UIMIX = {
+    i : 0,
+    init: function(c) {
+        var c = c ? c : VIVO_UIMIX;
+        for (var i in c) {if (c[i] && c[i].init) {c[i].init();}}
+    },
+    iepng : function(){
+        
+        if(VIVO_UIMIX.browser(1)==6){
+            for(var j=0; j<document.images.length; j++)
+            {
+                var img = document.images[j];
+                var imgName = img.src.toUpperCase();
+                if (imgName.substring(imgName.length-3, imgName.length) == "PNG")
+                {
+                 var imgID = (img.id) ? "id='" + img.id + "' " : "";
+                 var imgClass = (img.className) ? "class='" + img.className + "' " : "";
+                 var imgTitle = (img.title) ? "title='" + img.title + "' " : "title='" + img.alt + "' ";
+                 var imgAlt = (img.alt) ? "alt='" + img.alt + "' " : "alt='" + img.title + "' ";
+                 var imgStyle = "display:inline-block;" + img.style.cssText;
+                 if (img.align == "left") imgStyle = "float:left;" + imgStyle;
+                 if (img.align == "right") imgStyle = "float:right;" + imgStyle;
+                 if (img.parentElement.href) imgStyle = "cursor:hand;" + imgStyle;
+                 var strNewHTML = "<i " + imgID + imgClass + imgTitle +  " style=\"" + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=\'" + img.src + "\', sizingMethod='scale');\"></i>";
+                 img.outerHTML = strNewHTML;
+                 j = j-1;
+                }
+            }
+        }
+    }
+};
+
+VIVO_UIMIX.main = {
+    init : function(){
+        VIVO_UIMIX.init(VIVO_UIMIX.main);
+        // VIVO_UIMIX.main.fixcontain();
+        VIVO_UIMIX.iepng();
+        if(VIVO_UIMIX.browser(1)==6){setTimeout(function(){$("[href]").focus(function() {this.blur()})},1000)}
+        jQuery.easing.def="easeOutCubic";
+        $("img").mousedown(function(e){return false});
+    },
+    fixcontain: function(){
+        if($("#vivo-contain").size()<=0) return;
+        $(window).resize(function(){
+            var wh=$(this).height(),vw=$("#vivo-wrap"),ct=$("#vivo-contain"),hd=$("#vivo-head"),fd=$("#vivo-foot");
+            if(wh<vw.height()) return;
+            ct.css({height:wh-hd.height()-fd.height()});
+        }).resize();
+    }
+};
+
+
+$(document).ready(function() {VIVO_UIMIX.init()});
+    </script>
+</head>
+<style type="text/css">
+    .switch-high {
+    width:100%;
+    height:18px;
+    line-height:18px;
+    text-align:center;
+    position:absolute;
+    z-index:99;
+    top:670px;
+}
+.switch-high a {
+    width:18px;
+    height:18px;
+    display:inline-block;
+    margin:0 1px;
+    position:relative;
+}
+.switch-high a b {
+    width:8px;
+    height:8px;
+    overflow:hidden;
+    display:inline-block;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:-4px 0 0 -4px;
+    background:#e5e5e5;
+    background:rgba(0,0,0,.2);
+    border-radius:50%;
+    transition:all .2s ease-in-out;
+    transform:translate3d(0,0,0);
+}
+.focus-gallery .switch-high a:hover b,.focus-gallery .switch-high a.current b {
+    background:#008cd6;
+    transform:scale(1.5);
+}
+</style>
+<body class="home">
+    <div id="vivo-contain">
+        <div class="focus-gallery">
+            <ul class="cl">
+                <li>
+                </li>
+
+                <li>
+                </li>
+
+                <li>
+                </li>
+
+
+                <li>
+                </li>
+
+
+                <li>
+                </li>
+            </ul>
+            <div class="switch-high"></div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    VIVO_UIMIX.main.high = {
+
+    init : function(){
+        var highBox=$("#vivo-contain .focus-gallery"),
+        sildeBox=highBox.find("ul li"),
+        totalHigh=sildeBox.size(),
+        switchHigh=highBox.find(".switch-high"),
+        curHigh=oldHigh=0,
+        delay=8000,
+        t=null,
+        isPlay=false;
+
+        if(!$("body").hasClass("home")) return;
+
+        var html = '';
+        for(var i=0; i<totalHigh; i++){
+            html+="<a><b></b></a>";
+        }
+        switchHigh.append(html);
+
+        sildeBox.each(function(i,j){
+            $(j).css({opacity:0,zIndex:1,display:"none"});
+        });
+
+    },
+};
+</script>
+</html>

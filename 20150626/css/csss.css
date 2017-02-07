@@ -1,0 +1,690 @@
+*{margin:0px;padding:0px;border:0px;}
+img{display:block;}
+a{text-decoration:none;color: #999;outline: 0;}
+/*portal.html*/
+#header {
+	margin: 0 auto;
+	height: 142px;
+	width: 983px;
+	font-size: 14px;
+}
+
+#header .header-top{
+	width: auto;
+	height: 90px;
+}
+
+.header-top .logo{
+	width: 250px;
+	height: 90px;
+	float: left;
+	background: url(../image/logo.png) no-repeat;
+	background-position:center;
+}
+
+.header-top .loginBox{
+	width: 100px;
+	height: 50px;
+	float:right;
+	position: relative;
+	top: 18px;
+	right: 20px;
+	font: 13px "Microsoft YaHei",tahoma,Verdana,sans-serif;
+	color: black;
+}
+
+.header-top .top-guest{
+	line-height: 50px;
+}
+
+.header-top .top-guest a:hover{
+	color: #049ff1;
+}
+
+.header-top .loginBox .gap{
+	margin: 0 3px;
+}
+
+.header-top .search{
+	width: 161px;
+	height: 50px;
+	float: right;
+	position: relative;
+	top: 18px;
+	right: 60px;
+}
+
+.header-top .search #txt {
+	height: 24px;
+	border: 1px solid #e1e0e0;
+	outline: 0;
+	padding-left: 7px;
+	font-size: 12px;
+	background: #fff;
+	color: #888!important;
+	width: 152px;
+	margin-top:12px; 
+}
+
+.search .search-btn {
+	background: url(../image/search-big.png) no-repeat;
+	position: absolute;
+	top: 16px;
+	width: 15px;
+	height: 15px;
+	right: 5px;
+	cursor: pointer;
+}
+
+#header .header-bottom{
+	margin-top: 6px;
+	width: 983px;
+	height: 46px;
+	background-color: #049ff1;
+	border-radius:5px;
+}
+
+.header-bottom ul .hd-item a {
+	color: #fff;
+	display: inline-block;
+	height: 46px;
+	line-height: 46px;
+	padding: 0 12px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.header-bottom ul .hd-item{
+	float: left;
+	list-style-type: none;
+}
+
+.header-bottom ul .hd-item a:hover,.header-bottom ul .hd-item a.checked{
+	color: #fff;
+	background-color: #065fb9;
+}
+
+.header-bottom ul .hd-item .index-a {
+	border-radius: 5px 0 0 5px;
+}
+
+/*吸顶式导航*/
+#header .xiding{
+	position: fixed;/*固定定位*/
+	top: 0px;
+	z-index: 100;
+}
+
+#main{
+	margin: 0 auto;
+	width: 983px;
+}
+
+
+/*主体*/
+#content{
+	width: 983px;
+
+	/*修改成动态*/
+	height: 2000px;
+	position: relative;
+	top: 10px; 
+}
+
+/*main left*/
+#content .articleleft{
+	width: 644px;
+	float: left;
+}
+
+/*5个小块*/
+#content .articleleft .mod-a{
+	margin: 0 20px;
+	padding: 0 0 20px;
+}
+
+#main .articleleft .mod-a h2 a{
+	font-family: "Microsoft Yahei";
+	color: #333;
+	height: 60px;
+	line-height: 60px;
+	font-size: 22px;
+	font-weight: normal;
+}
+
+#main .articleleft .mod-a h2 a:hover{
+	color: #049ff1;
+}
+
+/*每位商城*/
+.mod-a p.data-info {
+	line-height: 1.5;
+	margin-bottom: 15px;
+	color: #999;
+	float: left;
+}
+
+.mod-a .plate {
+	background: #049ff1;
+	color: #fff;
+	padding: 4px 5px;
+	border-radius: 2px;
+}
+
+.mod-a p.data-info a:hover{
+	background-color: #70e1ff;
+}
+
+/*分享新浪*/
+.mod-a p.sharearea {
+	line-height: 1.5;
+	margin-bottom: 15px;
+	float: right;
+}
+
+.mod-a p.sharearea a{
+	display: inline-block;
+	width: 25px;
+	padding-left: 25px;
+	height: 15px;
+	background: url(../image/sharetoweibo.png) no-repeat 0 -3px;
+}
+
+.mod-a p.sharearea a:hover{
+	display: inline-block;
+	width: 25px;
+	padding-left: 25px;
+	height: 15px;
+	color: #049ff1;
+	background: url(../image/sharetoweibo.png) no-repeat 0 -23px;
+}
+
+.mod-a .pipe {
+	float: right;
+	margin: 0 5px;
+	color: #dde0e0;
+	line-height: 19px;
+	height: 16px;
+	overflow: hidden;
+	display: none;
+}
+
+.mod-a p.reply-num, .mod-a p.view-num {
+	float: right;
+	line-height: 1.5;
+	color: #acacac;
+	margin-bottom: 15px;
+	padding: 0 0 0 20px;
+	background: url(../image/view.png) no-repeat 0 2px;
+}
+
+.mod-a p.view-num {
+	background-position: 0 -18px;
+	padding: 0 0 0 22px;
+}
+
+.mod-a p {
+	line-height: 30px;
+}
+
+/*main 大图*/
+.mod-a .pic {
+	width: 605px;
+	height: 220px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+.mod-a .txt-info {
+	font-size: 14px;
+	text-indent: 2em;
+	clear: both;
+	font-family: "Microsoft Yahei";
+	color: #666;
+}
+
+.mod-a .more {
+	text-align: right;
+	clear: both;
+}
+
+.no-bdr {
+	border: 0!important;
+}
+
+/*分页*/
+.page {
+	border-top: 1px solid #e5e5e5;
+	padding: 14px 0;
+	margin: 0 20px;
+}
+
+.page li {
+	float: left;
+}
+
+.page li a, .page .next_style {
+	float: left;
+	padding: 5px 10px;
+	margin: 0 3px;
+	border: 1px solid #dcdcdc;
+	color: #676767;
+}
+
+.page li .nowPage_style, .page li a:hover, .page .next_style:hover {
+	background: #049ff1;
+	border: 1px solid #00aba1;
+	color: #fff;
+}
+
+
+
+/*main right*/
+#content .articleright{
+	width: 320px;
+	float: right;
+}
+
+.mod-b h2 {
+	font-family:  "Microsoft YaHei",tahoma,Verdana,sans-serif;
+	color: black;
+	position: relative;
+	height: 40px;
+	font-size: 14px;
+	font-weight: normal;
+	padding-left: 10px;
+	line-height: 40px;
+	background-color: #fafafa;
+	border-bottom: 1px solid #e5e5e5;
+	border-radius: 5px 5px 0 0;
+	font-weight: 700;
+}
+.bobao .score {
+	font-family:  "Microsoft YaHei",tahoma,Verdana,sans-serif;
+	float: right;
+	margin-right: 17px;
+	font-size: 12px;
+}
+.bobao .score em {
+	font-size: 18px;
+	font-style: normal;
+}
+.bobao .new-num-box {
+	background: url(../image/bobao.gif) no-repeat 34px 36px;
+	padding: 35px 0 35px 154px;
+	border-radius: 10px;
+	overflow: hidden;
+	color: rgb(4,159,241);
+	display: block;
+}
+.bobao .new-num-box p {
+	font-size: 14px;
+	font-family:  "Microsoft YaHei",tahoma,Verdana,sans-serif;
+	line-height: 30px;
+}
+
+/*播报下导航*/
+.bobao .bobao-nav {
+	text-align: center;
+}
+.bobao .bobao-nav a {
+	font-family:  "Microsoft YaHei",tahoma,Verdana,sans-serif;
+	font-size: 14px;
+	color: #333;
+	padding: 4px 32px;
+	border-right: 1px solid #e1e1e1;
+	display: inline-block;
+	margin: 10px 0;
+}
+.bobao .bobao-nav a:hover{
+	color: rgb(25,203,188);
+}
+/*热门板块*/
+.mod-b h2 {
+	color: black;
+	position: relative;
+	height: 40px;
+	font-size: 14px;
+	font-weight: normal;
+	padding-left: 10px;
+	line-height: 40px;
+	background-color: #fafafa;
+	border-bottom: 1px solid #e5e5e5;
+	border-radius: 5px 5px 0 0;
+	font-weight: 700;
+}
+.mod-b h2 a {
+	position: absolute;
+	right: 10px;
+	top: 0;
+	font-size: 12px;
+	color: #049ff1;
+	font-weight: normal;
+}
+
+/*小图标*/
+.sidebar-hotblock-ul li {
+	font: 12px/1.5 "Microsoft YaHei",tahoma,Verdana,Geneva,sans-serif;
+	color: #666;
+	float: left;
+	width: 158px;
+	padding: 24px 0;
+	text-align: center;
+	overflow: hidden;
+	border-right: 1px solid #f3f3f3;
+	border-bottom: 1px solid #f3f3f3;
+}
+.sidebar-hotblock-ul li img {
+	display: inline-block;
+	border-radius: 5px;
+	vertical-align: middle;
+}
+
+.sidebar-hotblock-ul li a {
+	color: #666;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+.sidebar-hotblock-ul li a:hover{
+	color: rgb(25,203,188);
+}
+
+.sidebar-hotblock-ul li.even {
+	border-right: 0;
+}
+li {
+	display: list-item;
+}
+
+/*签到*/
+.signin-box {
+	font: 12px/1.5 "Microsoft YaHei",tahoma,Verdana,Geneva,sans-serif;
+	padding: 7px 5px 7px 137px;
+	background: url(../image/signinlogo.png) #fff no-repeat 27px 5px;
+	height: 86px;
+	margin-bottom: 15px;
+	color: #6c6c6c;
+	font-size: 16px;
+	display: inline-block;
+}
+a:hover {
+	text-decoration: none;
+	color: #049ff1;
+}
+.signin-box div {
+	font-size: 16px;
+	float: left;
+	margin-top: 29px;
+}
+.signin-box p{
+	font-size: 16px;
+}
+.signin-box .signin-count {
+	margin-top: 17px;
+	border-left: 1px solid #e5e5e5;
+	margin-left: 17px;
+	padding-left: 17px;
+	text-align: center;
+}
+
+/*热门*/
+.mod-b .hot dl {
+	margin-left: 10px;
+	overflow: hidden;
+	zoom: 1;
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+.mod-b .hot dl dt {
+
+	float: left;
+	width: 95px;
+	height: 70px;
+}
+.mod-b .hot dl dt img {
+	border-radius: 5px;
+	width: 95px;
+	height: 70px;
+}
+.mod-b .hot dl dd {
+	margin-left: 107px;
+}
+.mod-b .hot dl dd h3 a{
+	font: 14px "Microsoft YaHei",tahoma,Verdana,Geneva,sans-serif;
+	font-weight: normal;
+	color: #333;
+}
+.mod-b .hot dl dd h3 a:hover{
+	color: rgb(25,203,188);
+}
+.mod-b .hot dl dd p {
+	color: #999;
+	margin-bottom: 5px;
+}
+.mod-b .hot dl dd .btns {
+	display: block;
+	width: 70px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	color: #fff;
+	background-color: #f60;
+	border-radius: 2px;
+}
+
+/*产品推荐*/
+#fans-slides {
+	margin: 20px 20px 0;
+	padding-bottom: 38px;
+}
+/*小幻灯片*/
+/* 焦点图 */
+#show {
+	position: relative;
+	height: 205px;
+	width: 280px;
+}
+#show a {
+	float: left;
+	display: inline;
+}
+#show .img {
+	position: absolute;
+	width: 280px;
+	height: 205px;
+	overflow: hidden
+}
+#show .img span {
+	position: absolute;
+	width: 19999px;
+	display: block
+}
+#show .btns {
+	z-index: 10;
+	position: absolute;
+	width: 280px
+}
+/*点*/
+#show .btns B {
+	position: absolute;
+	width: 100px;
+	display: block;
+	height: 14px;
+	overflow: hidden;
+	top: 215px;
+	left: 50%
+}
+#show .btns B I {
+	width: 10px;
+	background: #414140;
+	float: left;
+	height: 10px;
+	font-size: 0px;
+	overflow: hidden;
+	cursor: pointer;
+	margin-right: 6px;
+	border: #414140 2px solid;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px
+}
+#show .btns B I:hover {
+	background: #a7a7a6
+}
+#show .btns B I.on {
+	background: #3cd2f1;
+	cursor: default
+}
+#show .btns B I.on:hover {
+	background: #3cd2f1;
+	cursor: default
+}
+
+/*箭头*/
+#show .btns S {
+	position: absolute;
+	width: 60px;
+	display: none;
+	height: 80px;
+	overflow: hidden;
+	top: 130px;
+	cursor: pointer
+}
+#show .btns S I {
+	position: absolute;
+	width: 60px;
+	background: url(../image/btn_show.png);
+	height: 160px;
+}
+#show .btns S.prev {
+	left: 0px
+}
+#show .btns S.prev I {
+	top: -80px
+}
+#show .btns S.next {
+	right: 0px
+}
+.show-hover#show .btns S {
+	display: block
+}
+/*返回顶部*/
+.go {
+	width: 47px;
+	height: 106px;
+	background-color: #FFF;
+	position: fixed;
+	right: 12px;
+	bottom: 25%;
+	border-radius: 5px;
+	box-shadow: 0 0 2px #6E6E6E 
+}
+
+/*引入按钮图片*/
+.go a {
+	background: url(../image/a.png) no-repeat;
+	display: block;
+	text-indent: 999em;
+	width: 37px;
+	margin: 5px;
+	border: 0;
+	overflow: hidden;
+	float: left 
+}
+
+/*引入按钮图片定位*/
+.go .top {
+	background-position: 0 -33px;
+	height: 22px 
+}
+.go .feedback {
+	background-position: 0 -54px;
+	height: 32px 
+}
+.go .bottom {
+	background-position: 0 -88px;
+	height: 22px 
+}
+
+/*鼠标悬停按钮图片定位*/
+.go .top:hover {
+	background-position: -38px -33px 
+}
+
+.go .feedback:hover {
+	background-position: -38px -54px 
+}
+.go .bottom:hover {
+	background-position: -38px -88px 
+}
+
+
+
+/*脚部*/
+#footer{
+	font-family: "Microsoft Yahei";
+	height: 400px;
+	background-color: rgb(56,57,59);
+}
+
+#footer .footer-top{
+	font-size: 20px;
+	margin: auto;
+	padding-left: 180px;
+	width: 1000px;
+}
+
+/*每位互联字体大小*/
+#footer .footer-top  dt{
+	font-size: 20px;
+}
+
+#footer .footer-top dl dt, #footer .footer-top dl dd {
+	display: inline-block;
+	margin-top: 35px;
+	margin-right: 30px;
+	vertical-align: middle;
+	color: #fff;
+}
+
+#footer .footer-main{
+	margin: 30px auto 35px;
+	padding-left: 180px;
+	height: 200px;
+	width: 1000px;
+}
+
+#footer .footer-main dl{
+	color: #fff;
+	width: 220px;
+	float: left;
+}
+
+#footer .footer-main .friends dd {
+	margin-top:15px; 
+	float: left;
+	width: 95px;
+}
+
+#footer .footer-main .content dd {
+	margin-top:15px; 
+	float: left;
+}
+
+#footer .footer-main .focus dd {
+	margin-top:15px; 
+	float: left;
+	width: 90px;
+}
+
+#footer dl dd a{
+	font-size: 12px;
+	color: #bbb;
+}
+
+#footer .copyright {
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+}

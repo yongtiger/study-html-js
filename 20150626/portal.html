@@ -1,0 +1,615 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>每位互联</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="js/5icool.org.js"></script>
+	<script type="text/javascript" src="js/slide.js"></script>
+	
+    <link type="text/css" href="css/5icool.org.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/csss.css">
+</head>
+<body>
+<a name="gotop"></a>
+	<div id="header">
+		<div class="header-top">
+			<div class="logo"></div>
+			<div class="loginBox">
+				<span class="top-guest">
+					<a href="./login.html">登陆</a>
+				</span>
+				<span class="top-guest gap">|</span>
+				<span class="top-guest">
+					<a href="./resigned.html">立即注册</a>
+				</span>
+			</div>
+			<div class="search">
+				<input type="text" id="txt" placeholder="请输入搜索内容">
+				<input type="submit" class="search-btn" value="">
+			</div>
+		</div>
+		<div class="header-bottom">
+			<ul class="clearfix">
+				<li class="hd-item"><a href="index.html" class="index-a checked">首页</a></li>
+				<li class="hd-item"><a href="portal.html">论坛</a></li>
+				<li class="hd-item"><a href="adout.html">热门板块</a></li>
+				<li class="hd-item"><a href="">热门活动</a></li>
+				<li class="hd-item"><a href="">直播</a></li>
+				<li class="hd-item"><a href="">积分商城</a></li>
+				<li class="hd-item"><a href="">签到</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="main">
+	<!-- 面包屑导航 -->
+		<!-- <div class="main-top">
+			<div class="z">
+				<a href="" class="nvhm" title="首页">首页</a>
+				<em>></em>
+				<a href="">板块</a>
+				<em>></em>
+				<a href="">产品</a>
+				<em>></em>
+				<a href="">SSJ</a>
+			</div>
+		</div> -->
+
+	<!-- 幻灯片 -->
+		<div id="zSlider">
+            <div id="picshow">
+                <div id="picshow_img">
+                    <ul>
+                        <li style="display: none;">
+                            <a href="#" target="_blank">
+                                <img src="image/slide/1.jpg">
+                            </a>
+                        </li>
+                        <li style="display: none;">
+                            <a href="#" target="_blank">
+                                <img src="image/slide/2.jpg">
+                            </a>
+                        </li>
+                        <li style="display: none;">
+                            <a href="#" target="_blank">
+                                <img src="image/slide/3.jpg">
+                            </a>
+                        </li>
+                        <li style="display: none;">
+                            <a href="#" target="_blank">
+                                <img src="image/slide/4.jpg">
+                            </a>
+                        </li>
+                        <li style="display: none;">
+                            <a href="#" target="_blank">
+                                <img src="image/slide/5.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="picshow_tx">
+                    <ul>
+                        <li style="display: none;">
+                            <h3>
+                                <a href="#" target="_blank">
+                                    SSJ：随时随地，想记就记
+                                </a>
+                            </h3>
+                            <p>
+                                记录每日知识点，复习昨日所学，依据艾宾浩斯遗忘曲线设计，帮助您记忆加深
+                            </p>
+                        </li>
+                        <li style="display: none;">
+                            <h3>
+                                <a href="#" target="_blank">
+                                    SSX：随时随地，想学就学
+                                </a>
+                            </h3>
+                            <p>
+                                不积小流无以成江海，不积跬步无以至千里。
+                            </p>
+                        </li>
+                        <li style="display: none;">
+                            <h3>
+                                <a href="#" target="_blank">
+                                    SSY：随时随地，想用就用
+                                </a>
+                            </h3>
+                            <p>
+                                方便使用，拿来就用
+                            </p>
+                        </li>
+                        <li style="display: none;">
+                            <h3>
+                                <a href="#" target="_blank">
+                                    每位论坛：细心聆听每位意见，加以改正，争取做到每位满意
+                                </a>
+                            </h3>
+                            <p>
+                                高举“有言则发，无水也灌”理论的伟大旗帜，认真贯彻落实“人过言留”的要求
+                            </p>
+                        </li>
+                        <li style="display: none;">
+                            <h3>
+                                <a href="#" target="_blank">
+                                    关于我们：你想知道什么？
+                                </a>
+                            </h3>
+                            <p>
+                                公司历史？公司口号？公司主打？公司核心就不能说啦。。。。
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="select_btn">
+                <ul>
+                    <li class="" style="border: none;">
+                        <a href="#" target="_blank">
+                            <img src="image/slide/01.jpg">
+                            <span class="select_text">
+                                SSJ：随时随地，想记就记
+                            </span>
+                            <span class="select_date">
+                                2015/03/23
+                            </span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#" target="_blank">
+                            <img src="image/slide/02.jpg">
+                            <span class="select_text">
+                                SSX：随时随地，想学就学
+                            </span>
+                            <span class="select_date">
+                                2015/04/15
+                            </span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#" target="_blank">
+                            <img src="image/slide/03.jpg">
+                            <span class="select_text">
+                                SSY：随时随地，想用就用
+                            </span>
+                            <span class="select_date">
+                                2015/06/17
+                            </span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#" target="_blank">
+                            <img src="image/slide/04.jpg">
+                            <span class="select_text">
+                                每位论坛：细心聆听每位意见
+                            </span>
+                            <span class="select_date">
+                                2015/07/15
+                            </span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#" target="_blank">
+                            <img src="image/slide/05.jpg">
+                            <span class="select_text">
+                                关于我们：你想知道什么？
+                            </span>
+                            <span class="select_date">
+                                2015/07/28
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+	<!-- 幻灯片 end-->
+
+		<div id="content">
+			<!-- 左 -->
+			<div class="articleleft">
+				<div class="mod-a">
+					<h2><a href="">【SSJ产品将要发布啦】注册及送会员，享受非人的待遇！</a></h2>
+					<p class="data-info"><a href="" class="plate">每位SSJ</a> 2015年7月24日  17:30 </p>
+					<p class="sharearea"><a href="" title="分享到新浪微博">分享</a></p>
+					<span class="pipe" style="display: inline;">|</span>
+					<p class="reply-num"><a href="">3415</a></p>
+					<span class="pipe" style="display: inline;">|</span>
+					<p class="view-num"><a href="">6734</a></p>
+					<a href="" title="【SSJ产品将要发布啦】注册及送会员，享受非人的待遇！">
+						<img src="image/a.jpg" alt="" class="pic">
+					</a>
+					<p class="txt-info">“艾宾浩斯遗忘曲线”时间间隔 记忆量：刚刚记忆完毕 100 %，20分钟之后 58.2%，1小时之后 44.2%，8-9小时之后 35.8%，1天后 33.7%，2天后 27.8%，8天后 25.4%，1个月后 21.1%</p>
+					<p class="more"><a target="_blank" href="#">查看全文&gt;&gt;</a></p>
+				</div>
+				<div class="mod-a">
+					<h2><a href="">【SSY产品将要发布】注册发图，就送VIP！！</a></h2>
+					<p class="data-info"><a href="" class="plate">每位SSY</a> 2015年6月24日  17:30 </p>
+					<p class="sharearea"><a href="" title="分享到新浪微博">分享</a></p>
+					<span class="pipe" style="display: inline;">|</span>
+					<p class="reply-num"><a href="">4352</a></p>
+					<span class="pipe" style="display: inline;">|</span>
+					<p class="view-num"><a href="">6542</a></p>
+					<a href="" title="【SSY产品将要发布】注册发图，就送VIP！！">
+						<img src="image/a.jpg" alt="" class="pic">
+					</a>
+					<p class="txt-info">SSY根据您的需求，发现合适您的API</p>
+					<p class="more"><a target="_blank" href="#">查看全文&gt;&gt;</a></p>
+				</div>
+				<div class="mod-a">
+					<h2><a href="">【360商城超级福利】625疯狂大促，晒单狂送智能硬件！</a></h2>
+					<p class="data-info"><a href="" class="plate">每位商城</a> 2015年6月24日  17:30 </p>
+					<p class="sharearea"><a href="" title="分享到新浪微博">分享</a></p>
+					<span class="pipe" style="display: inline;">|</span>
+					<p class="reply-num"><a href="">2222</a></p>
+					<span class="pipe" style="display: inline;">|</span>
+					<p class="view-num"><a href="">4444</a></p>
+					<a href="" title="【360商城超级福利】625疯狂大促，晒单狂送智能硬件！">
+						<img src="image/a.jpg" alt="" class="pic">
+					</a>
+					<p class="txt-info">625是一个神器的数字，6月25日“奇酷网”正式更名为“360商城”，全线智能产品疯狂直降，连续三天！ so~~~~~~~~~~~~ 625来了要剁手，有木有？ 360商城送硬件，有木有？ 这些都得有！！！</p>
+					<p class="more"><a target="_blank" href="#">查看全文&gt;&gt;</a></p>
+				</div>
+				<div class="mod-a no-bdr">
+					<h2><a href="">【360商城超级福利】625疯狂大促，晒单狂送智能硬件！</a></h2>
+					<p class="data-info"><a href="" class="plate">每位商城</a> 2015年6月24日  17:30 </p>
+					<p class="sharearea"><a href="" title="分享到新浪微博">分享</a></p>
+					<span class="pipe" style="display: inline;">|</span>
+					<p class="reply-num"><a href="">2222</a></p>
+					<span class="pipe" style="display: inline;">|</span>
+					<p class="view-num"><a href="">4444</a></p>
+					<a href="" title="【360商城超级福利】625疯狂大促，晒单狂送智能硬件！">
+						<img src="image/a.jpg" alt="" class="pic">
+					</a>
+					<p class="txt-info">625是一个神器的数字，6月25日“奇酷网”正式更名为“360商城”，全线智能产品疯狂直降，连续三天！ so~~~~~~~~~~~~ 625来了要剁手，有木有？ 360商城送硬件，有木有？ 这些都得有！！！</p>
+					<p class="more"><a target="_blank" href="#">查看全文&gt;&gt;</a></p>
+				</div>
+				<!-- 分页 -->
+				<div class="page clearfix">
+          			<ul style="float:right">
+            			<li>
+						    <a class="next_style" href="#">
+						        上一页
+						    </a>
+						    <a class="nowPage_style">
+						        1
+						    </a>
+						</li>
+						<li>
+						    <a class="btn_next" href="#">
+						        2
+						    </a>
+						</li>
+						<li>
+						    <a class="btn_next" href="#">
+						        3
+						    </a>
+						</li>
+						<li>
+						    <a class="btn_next" href="#">
+						        4
+						    </a>
+						</li>
+						<li>
+						    <a class="btn_next" href="#">
+						        5
+						    </a>
+						</li>
+						<li>
+						    <a class="btn_next" href="#">
+						        6
+						    </a>
+						</li>
+						<li>
+						    <a class="btn_next" href="#">
+						        7
+						    </a>
+						</li>
+						<a class="next_style" href="#">
+						    下一页
+						</a>
+						<a class="first_style" href="#">
+						</a>
+          			</ul>
+        		</div>
+				<!-- 分页 end -->
+			</div>
+			<!-- 左 end -->
+
+			
+			<!-- 右 -->
+			<div class="articleright">
+				<div class="mod-b bobao">
+					<h2>精神食粮<!-- <span class="score" style="color: rgb(255, 186, 0);"><em>76</em>分</span> -->
+						<a href="/forum.php" class="more" target="_blank">更多&gt;&gt;</a>
+					</h2>
+					<a class="new-num-box" href="#" target="_blank" style="border:5px solid rgb(255, 186, 0);">
+			            <p>API <span class="sys_bug">234</span>个</p>
+			            <p>知识点 <span class="virus">1017832</span>个</p>
+			            <p>问题 <span class="phishing">3465</span>个</p>
+		        	</a>
+		        	<div class="bobao-nav">
+			            <a href="#" target="_blank">资讯</a>
+			            <a href="#" target="_blank">知识</a> 
+			            <a href="#" target="_blank" class="last-one">插件</a>
+			        </div>
+				</div>
+				<div class="mod-b">
+					<h2>热门版块<a href="/forum.php" class="more" target="_blank">更多&gt;&gt;</a></h2>
+					<ul class="sidebar-hotblock-ul clearfix">
+		                <li class="">
+						    <img src="http://p7.qhimg.com/t012a3436d1611ca64a.png" alt="随时记" width="35">
+						    <a href="#" target="_blank">随时记</a>
+						</li>
+						<li class="even">
+						    <img src="http://p0.qhimg.com/t014f0f0ceb5f254aad.png" alt="随时学" width="35">
+						    <a href="#" target="_blank">随时学</a>
+						</li>
+						<li class="">
+						    <img src="image/png-0033.jpg" alt="随时用" width="35">
+						    <a href="#" target="_blank">随时用</a>
+						</li>
+						<li class="even">
+						    <img src="http://p0.qhimg.com/t01bf345a93d3abff39.png" alt="论坛" width="35">
+						    <a href="#" target="_blank">论坛</a>
+						</li>
+						<li class="">
+						    <img src="http://p1.qhimg.com/t0145412543c56740ba.png" alt="益智游戏" width="35">
+						    <a href="#" target="_blank">益智游戏</a>
+						</li>
+						<li class="even">
+						    <img src="image/t0167b115ce1a07e9cc.jpg" alt="360杀毒" width="35">
+						    <a href="#" target="_blank">安卓APP</a>
+						</li>
+						<li class="">
+						    <img src="image/0215002.jpg" alt="手机卫士" width="35">
+						    <a href="#" target="_blank">IOS APP</a>
+						</li>
+						<!-- <li class="even">
+						    <img src="http://p9.qhimg.com/d/inn/f5006079/anquan.png" alt="安全浏览器" width="35">
+						    <a href="#" target="_blank">安全浏览器</a>
+						</li>
+						<li class="">
+						    <img src="http://p5.qhimg.com/t010a24c1f8da4610dd.png" alt="好搜搜索" width="35">
+						    <a href="#" target="_blank">好搜搜索</a>
+						</li>
+						<li class="even">
+						    <img src="http://p7.qhimg.com/t0151727822e9ca6835.png" alt="安全卫士" width="35">
+						    <a href="#" target="_blank">安全卫士</a>
+						</li> -->
+            		</ul>
+				</div>
+				<!-- 签到 -->
+				<a class="clearfix signin-box mod-b" href="">
+		          	<div>签到</div>
+		          	<div class="signin-count">
+		            	<p>今日已签到</p>
+		            	<p class="signin-count-num">8446人</p>
+		          	</div>
+		        </a>
+		        <div class="mod-b">
+				    <h2>
+				        热门活动
+				    </h2>
+				    <div class="hot">
+				        <dl>
+				            <dt>
+				                <a href="#" target="_blank"
+				                title="安全路由mini公测火热招募中">
+				                    <img src="http://p9.qhimg.com/t01c1ede153f0f2c45c.png" alt="">
+				                </a>
+				            </dt>
+				            <dd>
+				                <h3>
+				                    <a href="#" target="_blank">
+				                        安全路由mini公测火热招募中
+				                    </a>
+				                </h3>
+				                <p>
+				                </p>
+				                <a class="btns" href="#"
+				                target="_blank" title="立即参与">
+				                    立即参与
+				                </a>
+				            </dd>
+				        </dl>
+				        <dl>
+				            <dt>
+				                <a href="#" target="_blank"
+				                title="“自动”刷朋友圈的神器？奇酷送一个你敢不敢要！">
+				                    <img src="http://p3.qhimg.com/t01c3e25ea228dd2fbd.jpg" alt="">
+				                </a>
+				            </dt>
+				            <dd>
+				                <h3>
+				                    <a href="#" target="_blank">
+				                        “自动”刷朋友圈的神器？奇酷送一个你敢不敢要！
+				                    </a>
+				                </h3>
+				                <p>
+				                </p>
+				                <a class="btns" href="#"
+				                target="_blank" title="立即参与">
+				                    立即参与
+				                </a>
+				            </dd>
+				        </dl>
+				        <dl>
+				            <dt>
+				                <a href="#" target="_blank"
+				                title="手机用户体验调查——新版如何，你来评价">
+				                    <img src="http://p5.qhimg.com/t01331892fca15f8b8a.jpg" alt="">
+				                </a>
+				            </dt>
+				            <dd>
+				                <h3>
+				                    <a href="#" target="_blank">
+				                        手机用户体验调查——新版如何，你来评价
+				                    </a>
+				                </h3>
+				                <p>
+				                </p>
+				                <a class="btns" href="#"
+				                target="_blank" title="立即参与">
+				                    立即参与
+				                </a>
+				            </dd>
+				        </dl>
+				        <dl>
+				            <dt>
+				                <a href="#" target="_blank"
+				                title="【时光不老，我们不散】又是一年毕业季，上图说趣事">
+				                    <img src="http://p0.qhimg.com/t013c2ab39a55e66506.jpg" alt="">
+				                </a>
+				            </dt>
+				            <dd>
+				                <h3>
+				                    <a href="#" target="_blank">
+				                        【时光不老，我们不散】又是一年毕业季，上图说趣事
+				                    </a>
+				                </h3>
+				                <p>
+				                </p>
+				                <a class="btns" href="#"
+				                target="_blank" title="立即参与">
+				                    立即参与
+				                </a>
+				            </dd>
+				        </dl>
+				        <dl>
+				            <dt>
+				                <a href="#" target="_blank"
+				                title="360小水滴粉丝团 火热招募中！">
+				                    <img src="http://p1.qhimg.com/t01be6e0542f26a1d0c.png" alt="">
+				                </a>
+				            </dt>
+				            <dd>
+				                <h3>
+				                    <a href="#" target="_blank">
+				                        每位互联粉丝团 火热招募中！
+				                    </a>
+				                </h3>
+				                <p>
+				                    在论坛活动贴中盖楼参与活动，...
+				                </p>
+				                <a class="btns" href="#"
+				                target="_blank" title="立即参与">
+				                    立即参与
+				                </a>
+				            </dd>
+				        </dl>
+				    </div>
+				</div>
+				<div class="mod-b">
+					<h2>产品推荐</h2>
+					<!-- 小幻灯片 需要改进 -->
+					<div id="show" rel="autoPlay">
+				      	<div class="img">
+				          	<span>
+				              	<a href="#" target="_blank"><img src="image/slide1/1.jpg" style="width:280px; height:205px;"/></a>
+				              	<a href="#" target="_blank"><img src="image/slide1/2.jpg" style="width:280px; height:205px;"/></a>
+				              	<a href="#" target="_blank"><img src="image/slide1/3.jpg" style="width:280px; height:205px;"/></a>
+				              	<a href="#" target="_blank"><img src="image/slide1/4.jpg" style="width:280px; height:205px;"/></a>
+				              	<a href="#" target="_blank"><img src="image/slide1/5.jpg" style="width:280px; height:205px;"/></a>
+				          	</span>
+				      	</div>
+					</div>
+					
+				</div>
+			</div>
+			<!-- 右 end -->
+		</div>
+		
+	</div>
+	<!-- 脚部 start -->
+            <div id="footer">
+                <div class="footer-top">
+                    <dl>
+                        <dt>每位互联</dt>
+                        <dd><a href="#"><img src="image/common/3.png"></a></dd>
+                        <dd><a href="#"><img src="image/common/4.png"></a></dd>
+                    </dl>
+                </div>
+
+                <div class="footer-main">
+                    <dl class="friends">
+                        <dt>友情链接</dt>
+                        <dd><a href="#">凤凰网</a></dd>
+                        <dd><a href="#">腾讯</a></dd>
+                        <dd><a href="#">阿里</a></dd>
+                        <dd><a href="#">网易</a></dd>
+                        
+                        <dd><a href="#"> 新浪</a></dd>
+                        <dd><a href="#">阿里巴巴</a></dd>
+                        
+                    </dl>
+
+                    <dl class="content">
+                        <dt>联系我们</dt>
+                        <dd><a href="#">客服邮箱1039049277@qq.cnm</a></dd>
+                        <dd><a href="#">商务合作296341060@qq.cnm</a></dd>
+                        <dd><a href="#">论坛反馈1773456306@qq.cnm</a></dd>
+                    </dl>
+
+                    <dl class="focus">
+                        <dt>关注每位</dt>
+                        <dd>
+                            <a href="">
+                                <img src="image/common/5.png" style="width:80px;height:80px;" />
+                                <span>
+                                    随时记微博
+                                </span>
+                            </a>
+                        </dd>
+                        <dd>
+                            <!-- <a href="">
+                                <img src="image/common/6.jpg" style="width:80px;height:80px;"/>
+                                <span>随时记微信</span>
+                            </a> -->
+                        </dd>
+                    </dl>
+
+                    <dl class="content">
+                        <dt>互动讨论</dt>
+                        <dd><a href="#">安卓版交流群1：1039049277</a></dd>
+                        <dd><a href="#">安卓版交流群2：278029268</a></dd>
+                        <dd><a href="#">ios越狱版交流群：278029268</a></dd>
+                        <dd><a href="#">非越狱版交流群：278029268</a></dd>
+                        <dd><a href="#">WP版交流群 ：1773456306</a></dd>
+                    </dl>
+                </div>
+
+                <div class="copyright">
+                    Copyright © 2013-2015 meiweipub.com All Rights Reversed. 京ICP备11018032号-8 京公网安备11010802013056
+                </div>
+            </div>
+            <!-- 脚部 end -->
+			<!-- 返回顶部 -->
+		    <a name="gobottom">
+		    </a>
+		    <div class="go">
+		        <a title="返回顶部" class="top" href="#gotop">
+		        </a>
+		        <a title="如果您有意见，请反馈给我们！" class="feedback" href="#" target="_blank">
+		        </a>
+		        <a title="返回底部" class="bottom" href="#gobottom">
+		        </a>
+		    </div>
+		    <!-- 返回顶部end -->
+</body>
+<script type="text/javascript">
+	var _top=0;
+
+	// 窗口滚动事件
+	$(window).scroll(function(event) {
+
+		_top=$(window).scrollTop();// 获取浏览器滚动的高度
+		
+		if (_top>100) {//当滚动的高度超过100时，添加class
+			$(".header-bottom").addClass('xiding');
+		}else{
+			$(".header-bottom").removeClass('xiding');
+		}
+	});
+</script>
+</html>

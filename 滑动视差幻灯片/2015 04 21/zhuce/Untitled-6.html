@@ -1,0 +1,395 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script type="text/javascript"src="doudong/jquery-1.js"></script>
+<script type="text/javascript"src="doudong/jquery.js"></script>
+<style type="text/css">
+	css初始化
+	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+	body { background:#fff; color:#555; font-size:14px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+	td,th,caption { font-size:14px; }
+	h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+	address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+	a { color:#555; text-decoration:none; }
+	a:hover { text-decoration:underline; }
+	img { border:none; }
+	ol,ul,li { list-style:none; }
+	input, textarea, select, button {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	margin: 10px;
+	padding: 10px;
+	width: 200px;
+}
+	table { border-collapse:collapse; }
+	html {overflow-y: scroll;} 
+	
+	.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+	.clearfix { *zoom:1; }
+	
+
+
+
+
+
+
+
+    img {
+        border: none;
+    }
+	.banner {
+        width: 900px;
+        margin: 0px auto;
+        cursor: pointer;
+        position: relative;
+        margin-bottom: 15px;
+    }
+
+    .banner,.banner ul {
+        display: block;
+        height: 300px;
+        overflow: hidden;
+    }
+    .banner li,.banner li,.banner li img {
+        display: block;
+        width: 900px;
+        height: 300px;
+        float: left;
+        overflow: hidden;
+    }
+    .banner #prevbt,.banner #nextbt {
+        display: block;
+        width: 30px;
+        height: 50px;
+        background: url(doudong/indexsprites.png) no-repeat #fff;
+        position: absolute;
+        top: 120px;
+        opacity: .5 ;
+        filter: alpha(opacity=100);
+    }
+    .banner #prevbt {
+        background-position: 0 -110px;
+        left: 0;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .banner #nextbt {
+        background-position: -40px -110px;
+        right: 0;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	#main_body {
+		color: #000000;
+	}
+	#main_top {
+		background-image: none;
+		height: 20px;
+		width: 960px;
+		background-color: #F2F2F2;
+		font-size: 14px;
+		font-weight: 400;
+		color: #F2F2F2;
+		font-style: normal;
+		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+		text-decoration: none;
+		text-transform: none;
+		margin:0 auto;
+	}
+	
+	#main_top a{cursor:pointer;}
+	
+	#main_top .top_content li{
+		line-height: 20px;
+		float:left;
+		list-style-type:none;
+		margin-left:10px;}
+		
+	#main_top .top_contentl li{
+		float:left;
+		list-style-type:none;
+		margin-right:10px;}
+	
+	#main_top .top_contentl{
+		margin-left:800px;}
+	
+	#main_bdbd {
+		background-position: center center;
+		height: auto;
+		width: 960px;
+		margin: 0 auto;
+	}
+	#main_header {
+		background-color: #FEFEFE;
+		height: 100px;
+		width: 960px;
+	}
+	#main_content {
+		background-color: #FCFCFC;
+		height: 500px;
+		width: 960px;
+	}
+	
+	#main_form {
+		margin-top:20px;}
+	
+	#form{
+	font-size: 24px;
+	background-color: #FCFCFC;
+	height: 100%;
+	width: 898px;
+	border: 1px solid #a0a0a0;
+	color: #000000;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-weight: lighter;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+	
+	#form .main_form{
+		line-height:100px;
+		}
+
+	#form .zc{
+		margin-left:210px;
+		margin-top:20px}
+		
+	#form .ipt{
+		margin-top:20px;}	
+		
+	#form .ipt ,.ipt1 ,.ipt2 ,.ipt3{
+		margin-left:50px;}
+		
+	#form label{
+		margin-left:220px;
+		}
+
+	#main_footer {
+		background-color: #FCFCFC;
+		height: 300px;
+		width: 960px;
+	}
+	#main_bottom {
+	background-color: #919191;
+	height: 50px;
+	width: 100%;
+	}
+	#main_btm{
+		width: 960px;
+		margin:0 auto;
+		}
+		
+	#main_btm li{
+		line-height:50px;
+		float:left;
+		margin-left:3px;
+		font-size:11px;}
+		
+	#main_btm li a{
+		color:#000000;}
+		
+#logo {
+	background-color: #F2F2F2;
+	height: 50px;
+	width: 960px;
+}
+#logo {
+	background-color: #F2F2F2;
+	height: 60px;
+	width: 960px;
+}
+#daohang {
+	background-color: #ECEEF1;
+	height: 40px;
+	width: 960px;
+}
+
+#daohang ul li{
+	float:left;
+	line-height:40px;
+	margin-left:25px;
+	color:#000000;
+	font-size:18px}
+	
+#search{
+	display: block;
+	float:right;
+	line-height:8px;
+	margin-right:30px}
+</style>
+</head>
+
+<body>	
+<div id="main_body">
+  <div id="main_top"> 
+    <ul class="top_content">
+      <li style=""><a hraf="#">网易</a></li>
+      <li><a hraf="#">|</a></li>
+      <li><a hraf="#">网页</a></li>
+      <li><a hraf="#">图片</a></li>
+      <li><a hraf="#">视频</a></li>
+      <li><a hraf="#">购物</a></li>
+      <li><a hraf="#">热闻</a></li>
+      <li><a hraf="#">词典</a></li>
+      <li style="font-weight:700;"><a hraf="#">翻译</a></li>
+      <li><a hraf="#">笔记</a></li>
+      <li><a hraf="#">更多>></a></li>
+    </ul>
+    <ul class="top_contentl">
+    	<li><a hraf="#">登陆</a></li>
+        <li><a hraf="#">|</a></li>
+        <li style="font-weight:700;"><a hraf="#">添加书签</a></li>
+    </ul>
+  </div>
+  <hr/>
+  <div id="main_bdbd">
+    <div id="main_header">
+      <div id="logo"><img src="t0151320b1d0fc50be8.png" width="218" height="56" alt="360"/>  
+      	<div id="search">
+        <label for="search" style="line-height:60px; font-size:22px; font-weight:600">搜索:</label>
+        <input type="search" name="search" id="search"></div>
+<div id="daohang">
+  <ul>
+        <li><a href="#">我的主页</a></li>
+        <li><a href="#">新闻头条</a></li>
+        <li><a href="#">电视剧</a></li>
+        <li><a href="#">电影</a></li>
+        <li><a href="#">小游戏</a></li>
+        <li><a href="#">小说大全</a></li>
+        <li><a href="#">旅游度假</a></li>
+        <li><a href="#">网上购物</a></li>
+        <li><a href="#">今日团购</a></li>
+        <li><a href="#">新浪</a></li>
+        <li><a href="#">微博</a></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+    <div id="main_content">
+      <form id="form" name="form" method="post">
+      <div class="main_form">
+        <p>
+          <label for="textfield">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 账号:</label>
+          <input class="ipt" type="text" name="textfield" id="textfield">
+        </p>
+        <p>
+          <label for="password">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 密码:</label>
+          <input class="ipt1" type="password" name="password" id="password">
+        </p>
+        <p>
+          <label for="password2">	确认密码:</label>
+          <input class="ipt2" type="password" name="password2" id="password2">
+        </p>
+        <p>
+          <label for="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 邮箱:</label>
+          <input class="ipt3" type="email" name="email" id="email">
+        </p>
+        <p>
+          <input class="zc" name="submit" type="submit" id="submit" form="form" formmethod="POST" formtarget="_self" value="注册">
+          <input class="zc1" type="reset" name="reset" id="reset" value="重置">
+        </p></div>
+      </form>
+</div>
+    <div id="main_footer">
+    <div class="banner" id="banner">
+    <a id="prevbt"></a>
+    <a id="nextbt"></a>
+    <ul>
+        <li>
+            <img src="doudong/11.jpg">
+        </li>
+        <li>
+            <img src="doudong/22.jpg">
+        </li>
+        <li>
+            <img src="doudong/44.png">
+        </li>
+        <li>
+            <img src="doudong/33.jpg">
+        </li>
+    </ul>
+</div>
+    </div>
+  </div>
+  <div id="main_bottom"> 
+  	<div id="main_btm">
+    	<ul>
+        <li><a href="#">Investor Relations</a></li>
+        <li>|</li>
+        <li><a href="#">关于我们</a></li>
+        <li>|</li>
+        <li><a href="#">安全保障</a></li>
+        <li>|</li>
+        <li><a href="#">360招聘</a></li>
+        <li>|</li>
+        <li><a href="#">战略合作：MSN中文网</a></li>
+        <li>|</li>
+        <li>Copyright ©360.cn. All Rights Reserved. 京ICP证080047号 京公网安备110000000006号</li>
+        </ul>
+     </div>
+  </div>
+</div>
+
+<script>
+    ///【设置幻灯片宽度】
+    var li_Width = 900;
+
+    var banner_Li_Num = $('#banner li').length;
+    $('#banner ul').css({'width': li_Width * banner_Li_Num, 'marginLeft': -li_Width});
+
+    function prevbt() {
+        ///【unbind删除一个或多个事件】
+        $('#prevbt').unbind('click');
+        ///【detach移除被选元素】///【insertBefore在被选元素之前插入 HTML 标记或已有的元素】
+        $('#banner li:last').detach().insertBefore('#banner li:first').parents('ul').css('marginLeft', -li_Width * 2).
+            ///【animate动画效果 使用+=或-=】///【easeInOutBack动画缓冲效果】
+            stop(true).animate({marginLeft: -li_Width}, 800, 'easeInOutBack', function () {
+            $('#prevbt').bind('click', prevbt);
+        });
+    }
+    function nextbt() {
+        $('#nextbt').unbind();
+        $('#banner ul').stop(true).animate({marginLeft: -li_Width * 2}, 800, 'easeInOutBack', function () {
+            $('#banner ul').css('marginLeft', -li_Width).find('li:first').insertAfter('#banner li:last');
+            $('#nextbt').bind('click', nextbt);
+        })
+    }
+
+    $('#prevbt').click(function () {
+        prevbt();
+    })
+    $('#nextbt').click(function () {
+        nextbt();
+    })
+    ///【自动轮播】
+    ///【setinterval方法则是表示间隔一定时间反复执行某操作】
+    banner_T = setInterval(banner_Auto, 3000)
+    function banner_Auto() {
+        nextbt();
+    }
+    ///【hover(over,out)悬停事件】
+    $('#banner').hover(function () {
+        clearInterval(banner_T);
+    }, function () {
+        banner_T = setInterval(banner_Auto, 3000);
+    })
+</script>
+
+
+</body>
+</html>
